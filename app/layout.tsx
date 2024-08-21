@@ -15,8 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="bg-white">
+      <link rel="icon" href="/icon?"type="image/" sizes=""/>
+      <body className={inter.className}>{children}
+      </body>
     </html>
   );
 }

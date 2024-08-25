@@ -43,11 +43,11 @@ export function PhraseTextField({positivePhrases, negativePhrases}){
 
     return(
         <>
-        <div className="mx-1 mt-4 mb-24 p-2 flex flex-wrap">
-            <div className="bg-white text-black rounded-lg p-1 m-1 ml-4 mr-auto text-center hover:text-blue-600 active:bg-blue-100">
+        <div className="mx-1 mt-4 mb-24 p-2 sm:flex sm:flex-wrap">
+            <div className="bg-white text-black rounded-lg p-1 m-1 mx-14 sm:ml-20 sm:mr-auto text-xl text-center hover:text-blue-600 active:bg-blue-100">
                 <button onClick={loadPositivePhrase}>Positive News</button>
             </div>
-            <div className="bg-white text-black rounded-lg p-1 m-1 mr-4 ml-auto text-center hover:text-red-600 active:bg-red-100">
+            <div className="bg-white text-black rounded-lg p-1 m-1 mx-14 sm:mr-20 sm:ml-auto text-xl text-center hover:text-red-600 active:bg-red-100">
                 <button onClick={loadNegativePhrase}>Negative News</button>
             </div>
         </div>

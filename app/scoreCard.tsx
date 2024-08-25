@@ -46,7 +46,7 @@ export default function ScoreCard({dailySentiment}){
                     <h3 id="default-popover" className="font-semibold text-gray-900 dark:text-white text-center">WWSI Score</h3>
                 </div>
                 <div className="px-3 py-2 text-center">
-                    <p className="text-wrap">This indicates the percentage of today's world news that had positive sentiment according to AWS Comprehend</p>
+                    <p className="text-wrap">This indicates the percentage of today's world news that had positive sentiment according to AWS Comprehend&apos;s AI Sentiment analysis</p>
                 </div>
             </div>
             }>

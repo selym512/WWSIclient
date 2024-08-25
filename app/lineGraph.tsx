@@ -17,7 +17,7 @@ export default function LineGraph({dates}){
 
 
   return (
-    <div className="w-5/6 object-center mx-auto">
+    <div className="w-5/6 object-center mb-5 mx-auto">
       <Chart
         chartType="Line"
         width="100%"

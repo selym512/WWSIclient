@@ -16,9 +16,9 @@ export default function PhraseViewer({positive, negative}){
 
 
     return(
-        <div className="bg-gray-100 mx-auto w-3/4 mb-16 rounded-2xl h-64">
-            <div><p className="text-black text-lg mt-2 mx-auto text-center text-wrap">Would you rather see the good news or the bad news?</p></div>
-            <PhraseTextField positivePhrases={positivePhrases} negativePhrases={negativePhrases}></PhraseTextField>
+        <div className="bg-gray-100 mx-auto w-3/4 mb-20 rounded-2xl">
+            <div><p className="text-black text-2xl mt-2 mx-auto text-center text-wrap">Would you rather see the good news or the bad news?</p></div>
+            <div><PhraseTextField positivePhrases={positivePhrases} negativePhrases={negativePhrases}></PhraseTextField></div>
         </div>
     );
 
@@ -43,7 +43,7 @@ export function PhraseTextField({positivePhrases, negativePhrases}){
 
     return(
         <>
-        <div className="mx-1 mt-1 p-2 flex flex-wrap">
+        <div className="mx-1 mt-4 mb-24 p-2 flex flex-wrap">
             <div className="bg-white text-black rounded-lg p-1 m-1 ml-4 mr-auto text-center hover:text-blue-600 active:bg-blue-100">
                 <button onClick={loadPositivePhrase}>Positive News</button>
             </div>
@@ -51,9 +51,9 @@ export function PhraseTextField({positivePhrases, negativePhrases}){
                 <button onClick={loadNegativePhrase}>Negative News</button>
             </div>
         </div>
-        <div className="flex mt-14">
+        <div className="h-24 flex mt-14">
             <div className="mx-auto">
-                <p className="text-black text-center">
+                <p className="text-black text-center px-1">
                     {loadedPhrase}
                 </p>
             </div>

@@ -9,35 +9,6 @@ import { Popover } from "flowbite-react";
 export default function ScoreCard({dailySentiment}){
 
 
-      
-    // function useWindowDimensions() {
-    //     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-      
-    //     useEffect(() => {
-    //       function handleResize() {
-    //         setWindowDimensions(getWindowDimensions());
-    //       }
-      
-    //       window.addEventListener('resize', handleResize);
-    //       return () => window.removeEventListener('resize', handleResize);
-    //     }, []);
-      
-    //     return windowDimensions;
-    //   }
-
-    //   function getWindowDimensions() {
-    //     return {
-    //       width: window.innerWidth,
-    //       height: window.innerHeight
-    //     };
-    //   }
-      
-    //   const { height, width } = useWindowDimensions();
-      
-      
-      
-      
-
 
     return(
         <Popover trigger="hover" placement="auto" content={
@@ -55,7 +26,7 @@ export default function ScoreCard({dailySentiment}){
                     <h2 className="font-bold text-black text-3xl text-wrap text-center">Today&apos;s Score</h2>
                 </div>
                 <div className="object-center mx-auto">
-                    <h3 className="underline text-black text-center">{(100 * Number(dailySentiment[dailySentiment.length - 1].value)).toFixed(1)}</h3>
+                    <h3 className="underline text-black text-center">{(100 * Number(dailySentiment[dailySentiment.length - 1].value)).toFixed(1)}%</h3>
                 </div>
             </div>
         </Popover>

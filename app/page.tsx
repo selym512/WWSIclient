@@ -32,8 +32,10 @@ export default async function Home() {
   return (
     <div className="bg-white w-screen h-screen py-10">
       <h1 className="text-black text-center text-wrap text-4xl font-bold mb-10 p-2 mx-auto object-center">World Wide Sentiment Indicator</h1>
-      <div className="flex flex-col gap-5 mx-auto">
+      <div className="flex flex-col gap-5 justify-items-center mx-auto">
         <ScoreCard dailySentiment={dailySentiment}></ScoreCard>
+        <div className="border-dotted border-4 rounded-md shrink w-4/5 md:w-1/2 lg:w-2/5 mx-auto mb-10"><p className="p-5 text-center text-black">The <b>World Wide Sentiment Indicator</b> uses AWS Comprehend, a natural language processor powered by machine learning, to create a score for each day. The daily score represents the percentage
+          of international news with sentiment that is positive.<br/><br/>The phrases used within this analysis are web scraped from a variety of international news websites. Currently the sources are: AP, BBC, NPR, PBS and Fox News.</p></div>
         <PhraseViewer positive={positive} negative={negative}></PhraseViewer>
         <LineGraph dates={dates}></LineGraph>
       </div>
